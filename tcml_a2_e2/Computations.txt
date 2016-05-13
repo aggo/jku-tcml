@@ -1,0 +1,17 @@
+Means:
+[  8.66612936e-17  -1.00000000e+00]
+[ 5.  1.]
+Covariance matrix xplus:
+array([[ 3.,  3.],
+       [ 3.,  5.]])
+Covariance matrix xminus:
+array([[  2.00000000e+00,   6.91824926e-16],
+       [  6.91824926e-16,   1.00000000e+00]])
+Determinants:
+2.0
+6.0
+Probabilities (plus and minus):
+0.695
+0.305
+
+Generalization error is 1005

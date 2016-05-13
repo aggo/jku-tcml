@@ -1,0 +1,17 @@
+Results:
+
+When N is 10:
+Average value of estimator A is 4.02421187762
+Average value of estimator B is 3.62179068985
+Variance of estimator A is 3.5218835568
+Variance of estimator B is 2.85272568101
+[1] On average, estimator A (var = 3.5218835568) is closer to the real value of the variance (4)
+[2] The estimator B has less variance.
+
+When N is 1000:
+Average value of estimator A is 3.99905515154
+Average value of estimator B is 3.99505609638
+Variance of estimator A is 0.0320281246815
+Variance of estimator B is 0.0319641004603
+[1] On average, estimator A (var = 0.0320281246815) is closer to the real value of the variance (4)
+[2] The estimator B has less variance.
