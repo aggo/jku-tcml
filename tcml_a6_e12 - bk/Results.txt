@@ -1,3 +1,0 @@
-Using various learning rates, one can notice that, while the error drops at first, after that
-it starts oscillating. The gradient "jumps around" and doesn't converge. The momentum term
-might help with reducing the number of epochs needed to reach a minimum.
