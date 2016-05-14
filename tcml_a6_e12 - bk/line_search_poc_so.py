@@ -1,4 +1,3 @@
-# proof of concept for line search from stack overflow
 import scipy as sp
 import scipy.optimize
 import numpy as np

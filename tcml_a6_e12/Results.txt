@@ -1,3 +1,21 @@
-Using various learning rates, one can notice that, while the error drops at first, after that
-it starts oscillating. The gradient "jumps around" and doesn't converge. The momentum term
-might help with reducing the number of epochs needed to reach a minimum.
+Assumption: all data is shuffled => skip shuffling part in implementation.
+
+(1) Using various learning rates, one can notice that, while the error drops at first, after that
+it starts oscillating.
+Small learning rate values (<0.1) seem to have very insignificant effect on the error.
+A good learning rate is found to be 0.05.
+
+(2) The momentum term
+...might help with reducing the number of epochs needed to reach a minimum and
+when having values < 0.8, it removes the oscillation of the error.
+
+(3) Scheduled learning rate adjustment
+The adjusting is done in the following way: when the error increases, reduce LR to half (*0.5), when the error decreases,
+sensibly increase it (*0.1).
+The effects as well as the behavior of the learning rate can be seen in the plots with "Scheduled LR".
+
+(4) The line search attempts to find good values for the learning rate in order to minimize the error.
+It needs a starting point (the weight vector values) and a search direction.
+We picked the negative of the gradient.
+There are better methods than this, but we chose this for simplicity.
+It doesn't seem to perform better than the scheduled lr adjustment, where the error drops under two.
